@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 108" role="img" aria-label="Nails by Mary butterfly logo">
+<defs>
+<filter id="sh" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="3.5" stdDeviation="2.6" flood-color="#8A1F4F" flood-opacity="0.38"/></filter>
+<radialGradient id="wl" cx="0.3" cy="0.25" r="0.95"><stop offset="0" stop-color="#FFF4F8"/><stop offset="0.3" stop-color="#FDBDD6"/><stop offset="0.7" stop-color="#EA6F9F"/><stop offset="1" stop-color="#B0306A"/></radialGradient>
+<radialGradient id="wr" cx="0.7" cy="0.25" r="0.95"><stop offset="0" stop-color="#FFE3EE"/><stop offset="0.3" stop-color="#F6A3C4"/><stop offset="0.7" stop-color="#D95A8E"/><stop offset="1" stop-color="#8F2457"/></radialGradient>
+<radialGradient id="ll" cx="0.35" cy="0.2" r="0.95"><stop offset="0" stop-color="#FFC9DD"/><stop offset="0.5" stop-color="#EE7FA8"/><stop offset="1" stop-color="#9E2A5F"/></radialGradient>
+<radialGradient id="lr" cx="0.65" cy="0.2" r="0.95"><stop offset="0" stop-color="#FFB5D0"/><stop offset="0.5" stop-color="#DD6293"/><stop offset="1" stop-color="#85204F"/></radialGradient>
+<linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFF3C9"/><stop offset="0.35" stop-color="#E6C374"/><stop offset="0.7" stop-color="#A97E30"/><stop offset="1" stop-color="#EBCF8B"/></linearGradient>
+<linearGradient id="gloss" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.9"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>
+<radialGradient id="gem" cx="0.35" cy="0.3" r="0.8"><stop offset="0" stop-color="#FFFFFF"/><stop offset="0.45" stop-color="#F1D690"/><stop offset="1" stop-color="#A97E30"/></radialGradient>
+</defs>
+<g filter="url(#sh)">
+<path d="M60 52 C40 56 16 66 22 86 C28 102 52 88 60 60 Z" fill="url(#ll)" stroke="url(#gold)" stroke-width="1.3"/>
+<path d="M60 52 C80 56 104 66 98 86 C92 102 68 88 60 60 Z" fill="url(#lr)" stroke="url(#gold)" stroke-width="1.3"/>
+<path d="M60 46 C46 8 7 2 6 27 C5 47 32 58 60 51 Z" fill="url(#wl)" stroke="url(#gold)" stroke-width="1.5"/>
+<path d="M60 46 C74 8 113 2 114 27 C115 47 88 58 60 51 Z" fill="url(#wr)" stroke="url(#gold)" stroke-width="1.5"/>
+</g>
+<path d="M57 47 C46 20 22 13 17 28 C15 40 34 49 57 49 Z" fill="#FFFFFF" opacity="0.16"/>
+<path d="M63 47 C74 20 98 13 103 28 C105 40 86 49 63 49 Z" fill="#FFFFFF" opacity="0.08"/>
+<path d="M30 28 C40 32 49 39 57 47 M90 28 C80 32 71 39 63 47 M26 80 C38 72 49 66 57 59 M94 80 C82 72 71 66 63 59 M20 38 C33 40 46 45 57 49 M100 38 C87 40 74 45 63 49" fill="none" stroke="#FFF1F6" stroke-width="0.9" stroke-linecap="round" opacity="0.65"/>
+<ellipse cx="30" cy="20" rx="14" ry="5.5" transform="rotate(-24 30 20)" fill="url(#gloss)"/>
+<ellipse cx="88" cy="21" rx="11" ry="4" transform="rotate(24 88 21)" fill="url(#gloss)" opacity="0.5"/>
+<ellipse cx="32" cy="80" rx="7" ry="3" transform="rotate(-35 32 80)" fill="url(#gloss)" opacity="0.6"/>
+<circle cx="24" cy="30" r="3.2" fill="url(#gem)"/><circle cx="96" cy="30" r="3.2" fill="url(#gem)"/>
+<circle cx="36" cy="84" r="2.3" fill="url(#gem)"/><circle cx="84" cy="84" r="2.3" fill="url(#gem)"/>
+<circle cx="40" cy="38" r="1.6" fill="url(#gem)"/><circle cx="80" cy="38" r="1.6" fill="url(#gem)"/>
+<ellipse cx="60" cy="54" rx="3.4" ry="18" fill="url(#gold)"/>
+<circle cx="60" cy="35" r="3.6" fill="url(#gold)"/>
+<path d="M58.5 33 C56 25 51 20 46 18 M61.5 33 C64 25 69 20 74 18" fill="none" stroke="url(#gold)" stroke-width="1.5" stroke-linecap="round"/>
+<circle cx="46" cy="18" r="2" fill="url(#gem)"/><circle cx="74" cy="18" r="2" fill="url(#gem)"/>
+</svg>
