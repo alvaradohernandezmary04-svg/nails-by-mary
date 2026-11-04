@@ -1,31 +1,101 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 108" role="img" aria-label="Nails by Mary butterfly logo">
-<defs>
-<filter id="sh" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="3.5" stdDeviation="2.6" flood-color="#8A1F4F" flood-opacity="0.38"/></filter>
-<radialGradient id="wl" cx="0.3" cy="0.25" r="0.95"><stop offset="0" stop-color="#FFF4F8"/><stop offset="0.3" stop-color="#FDBDD6"/><stop offset="0.7" stop-color="#EA6F9F"/><stop offset="1" stop-color="#B0306A"/></radialGradient>
-<radialGradient id="wr" cx="0.7" cy="0.25" r="0.95"><stop offset="0" stop-color="#FFE3EE"/><stop offset="0.3" stop-color="#F6A3C4"/><stop offset="0.7" stop-color="#D95A8E"/><stop offset="1" stop-color="#8F2457"/></radialGradient>
-<radialGradient id="ll" cx="0.35" cy="0.2" r="0.95"><stop offset="0" stop-color="#FFC9DD"/><stop offset="0.5" stop-color="#EE7FA8"/><stop offset="1" stop-color="#9E2A5F"/></radialGradient>
-<radialGradient id="lr" cx="0.65" cy="0.2" r="0.95"><stop offset="0" stop-color="#FFB5D0"/><stop offset="0.5" stop-color="#DD6293"/><stop offset="1" stop-color="#85204F"/></radialGradient>
-<linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFF3C9"/><stop offset="0.35" stop-color="#E6C374"/><stop offset="0.7" stop-color="#A97E30"/><stop offset="1" stop-color="#EBCF8B"/></linearGradient>
-<linearGradient id="gloss" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.9"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>
-<radialGradient id="gem" cx="0.35" cy="0.3" r="0.8"><stop offset="0" stop-color="#FFFFFF"/><stop offset="0.45" stop-color="#F1D690"/><stop offset="1" stop-color="#A97E30"/></radialGradient>
-</defs>
-<g filter="url(#sh)">
-<path d="M60 52 C40 56 16 66 22 86 C28 102 52 88 60 60 Z" fill="url(#ll)" stroke="url(#gold)" stroke-width="1.3"/>
-<path d="M60 52 C80 56 104 66 98 86 C92 102 68 88 60 60 Z" fill="url(#lr)" stroke="url(#gold)" stroke-width="1.3"/>
-<path d="M60 46 C46 8 7 2 6 27 C5 47 32 58 60 51 Z" fill="url(#wl)" stroke="url(#gold)" stroke-width="1.5"/>
-<path d="M60 46 C74 8 113 2 114 27 C115 47 88 58 60 51 Z" fill="url(#wr)" stroke="url(#gold)" stroke-width="1.5"/>
-</g>
-<path d="M57 47 C46 20 22 13 17 28 C15 40 34 49 57 49 Z" fill="#FFFFFF" opacity="0.16"/>
-<path d="M63 47 C74 20 98 13 103 28 C105 40 86 49 63 49 Z" fill="#FFFFFF" opacity="0.08"/>
-<path d="M30 28 C40 32 49 39 57 47 M90 28 C80 32 71 39 63 47 M26 80 C38 72 49 66 57 59 M94 80 C82 72 71 66 63 59 M20 38 C33 40 46 45 57 49 M100 38 C87 40 74 45 63 49" fill="none" stroke="#FFF1F6" stroke-width="0.9" stroke-linecap="round" opacity="0.65"/>
-<ellipse cx="30" cy="20" rx="14" ry="5.5" transform="rotate(-24 30 20)" fill="url(#gloss)"/>
-<ellipse cx="88" cy="21" rx="11" ry="4" transform="rotate(24 88 21)" fill="url(#gloss)" opacity="0.5"/>
-<ellipse cx="32" cy="80" rx="7" ry="3" transform="rotate(-35 32 80)" fill="url(#gloss)" opacity="0.6"/>
-<circle cx="24" cy="30" r="3.2" fill="url(#gem)"/><circle cx="96" cy="30" r="3.2" fill="url(#gem)"/>
-<circle cx="36" cy="84" r="2.3" fill="url(#gem)"/><circle cx="84" cy="84" r="2.3" fill="url(#gem)"/>
-<circle cx="40" cy="38" r="1.6" fill="url(#gem)"/><circle cx="80" cy="38" r="1.6" fill="url(#gem)"/>
-<ellipse cx="60" cy="54" rx="3.4" ry="18" fill="url(#gold)"/>
-<circle cx="60" cy="35" r="3.6" fill="url(#gold)"/>
-<path d="M58.5 33 C56 25 51 20 46 18 M61.5 33 C64 25 69 20 74 18" fill="none" stroke="url(#gold)" stroke-width="1.5" stroke-linecap="round"/>
-<circle cx="46" cy="18" r="2" fill="url(#gem)"/><circle cx="74" cy="18" r="2" fill="url(#gem)"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 200" role="img" aria-label="Nails by Mary butterfly logo: wings shaped like four almond nails in blush and rose with gold edges">
+  <defs>
+    <!-- One almond nail, cuticle at the origin, tip pointing up -->
+    <path id="nail" d="M0 -4 C-15 -4 -23 -17 -22 -38 C-21 -62 -9 -84 0 -98 C9 -84 21 -62 22 -38 C23 -17 15 -4 0 -4 Z"/>
+    <!-- Gold "french tip" band near the free edge -->
+    <path id="tip" d="M-16.5 -67 Q0 -58 16.5 -67 C11 -78 5 -89 0 -98 C-5 -89 -11 -78 -16.5 -67 Z"/>
+    <!-- Soft gloss highlight -->
+    <path id="gloss" d="M-12 -22 C-15 -36 -12 -52 -6 -64 C-9 -50 -10 -36 -8 -24 Z"/>
+
+    <linearGradient id="polish" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FCE4EE"/>
+      <stop offset="0.45" stop-color="#F2A7C3"/>
+      <stop offset="1" stop-color="#C4477A"/>
+    </linearGradient>
+    <linearGradient id="polishDeep" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F7C6D9"/>
+      <stop offset="0.5" stop-color="#E07BA4"/>
+      <stop offset="1" stop-color="#9E2A5F"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFF1C9"/>
+      <stop offset="0.35" stop-color="#E3BF72"/>
+      <stop offset="0.65" stop-color="#A97C2F"/>
+      <stop offset="1" stop-color="#EBD08F"/>
+    </linearGradient>
+    <linearGradient id="goldV" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F6DFA0"/>
+      <stop offset="0.5" stop-color="#B98B3A"/>
+      <stop offset="1" stop-color="#E9CB86"/>
+    </linearGradient>
+    <linearGradient id="glossFill" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.85"/>
+    </linearGradient>
+    <radialGradient id="pearl" cx="0.35" cy="0.3" r="0.75">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="0.6" stop-color="#FBE7EF"/>
+      <stop offset="1" stop-color="#D9A9BD"/>
+    </radialGradient>
+    <filter id="lift" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2.5" stdDeviation="2.5" flood-color="#7A1F48" flood-opacity="0.22"/>
+    </filter>
+
+    <linearGradient id="frenchTip" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#FBE3EC"/>
+      <stop offset="1" stop-color="#FFFAFC"/>
+    </linearGradient>
+    <radialGradient id="lunula" cx="0.5" cy="1" r="0.9">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Upper wing: a long almond nail with a pearl French tip -->
+    <g id="upper">
+      <use href="#nail" fill="url(#polish)"/>
+      <ellipse cx="0" cy="-12" rx="15" ry="10" fill="url(#lunula)"/>
+      <use href="#tip" fill="url(#frenchTip)"/>
+      <path d="M-16.5 -67 Q0 -58 16.5 -67" fill="none" stroke="url(#gold)" stroke-width="1.4" stroke-linecap="round"/>
+      <circle cx="0" cy="-62.5" r="2.6" fill="url(#pearl)" stroke="url(#gold)" stroke-width="0.7"/>
+      <use href="#gloss" fill="url(#glossFill)"/>
+      <use href="#nail" fill="none" stroke="url(#gold)" stroke-width="1.8" stroke-linejoin="round"/>
+    </g>
+    <!-- Lower wing: a shorter, deeper-toned almond nail -->
+    <g id="lower">
+      <use href="#nail" fill="url(#polishDeep)"/>
+      <ellipse cx="0" cy="-12" rx="15" ry="10" fill="url(#lunula)"/>
+      <use href="#tip" fill="url(#frenchTip)"/>
+      <path d="M-16.5 -67 Q0 -58 16.5 -67" fill="none" stroke="url(#gold)" stroke-width="2" stroke-linecap="round"/>
+      <circle cx="0" cy="-62.5" r="3" fill="url(#pearl)" stroke="url(#gold)" stroke-width="0.9"/>
+      <use href="#gloss" fill="url(#glossFill)"/>
+      <use href="#nail" fill="none" stroke="url(#gold)" stroke-width="2.4" stroke-linejoin="round"/>
+    </g>
+
+    <path id="spark" d="M0 -6 C0.6 -1.6 1.6 -0.6 6 0 C1.6 0.6 0.6 1.6 0 6 C-0.6 1.6 -1.6 0.6 -6 0 C-1.6 -0.6 -0.6 -1.6 0 -6 Z"/>
+  </defs>
+
+  <g filter="url(#lift)">
+    <!-- Lower wings (behind) -->
+    <use href="#lower" transform="translate(116 110) rotate(-132) scale(0.62)"/>
+    <use href="#lower" transform="translate(124 110) rotate(132) scale(0.62)"/>
+    <!-- Upper wings -->
+    <use href="#upper" transform="translate(115 100) rotate(-54) scale(0.98)"/>
+    <use href="#upper" transform="translate(125 100) rotate(54) scale(0.98)"/>
+
+    <!-- Antennae -->
+    <path d="M118 72 C114 58 104 46 92 42 C88 41 86 44 88 47" fill="none" stroke="url(#gold)" stroke-width="1.6" stroke-linecap="round"/>
+    <path d="M122 72 C126 58 136 46 148 42 C152 41 154 44 152 47" fill="none" stroke="url(#gold)" stroke-width="1.6" stroke-linecap="round"/>
+
+    <!-- Body -->
+    <path d="M120 76 C124.5 84 125 116 120 142 C115 116 115.5 84 120 76 Z" fill="url(#goldV)" stroke="#8C6526" stroke-width="0.6"/>
+    <path d="M117.6 96 q2.4 1.6 4.8 0 M117.4 106 q2.6 1.6 5.2 0 M117.7 116 q2.3 1.6 4.6 0 M118.3 126 q1.7 1.4 3.4 0" fill="none" stroke="#FFF5DA" stroke-width="0.7" opacity="0.8"/>
+    <!-- Pearl head -->
+    <circle cx="120" cy="72" r="5" fill="url(#pearl)" stroke="url(#gold)" stroke-width="1.2"/>
+  </g>
+
+  <!-- Sparkles -->
+  <use href="#spark" transform="translate(46 34) scale(1.1)" fill="url(#gold)"/>
+  <use href="#spark" transform="translate(196 30) scale(0.8)" fill="url(#gold)"/>
+  <use href="#spark" transform="translate(206 150) scale(0.7)" fill="url(#gold)"/>
+  <use href="#spark" transform="translate(36 146) scale(0.6)" fill="url(#gold)"/>
 </svg>

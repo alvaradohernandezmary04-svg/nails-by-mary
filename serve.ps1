@@ -12,7 +12,12 @@ $types = @{
 
 $listener = New-Object System.Net.HttpListener
 $listener.Prefixes.Add("http://localhost:$Port/")
-$listener.Start()
+try {
+  $listener.Start()
+} catch {
+  Write-Host "Port $Port is already in use. Stop the other preview server (or pass -Port 5501) and try again."
+  exit 1
+}
 Write-Host "Serving $root at http://localhost:$Port/  (Ctrl+C to stop)"
 
 try {
@@ -42,5 +47,6 @@ try {
     Write-Host "$($ctx.Response.StatusCode) /$rel"
   }
 } finally {
-  $listener.Stop()
+  if ($listener.IsListening) { $listener.Stop() }
+  $listener.Close()
 }
