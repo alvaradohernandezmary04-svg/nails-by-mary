@@ -68,7 +68,7 @@ a:hover { color: var(--rose-dark); }
   text-decoration: none;
   color: var(--rose);
 }
-.brand img { width: 44px; height: auto; }
+.brand img { width: 52px; height: auto; }
 .brand span {
   font-family: var(--font-script);
   font-size: 32px;
@@ -130,7 +130,7 @@ a:hover { color: var(--rose-dark); }
   text-align: center;
   padding: 72px 0 88px;
 }
-.hero-logo { width: 200px; margin: 0 auto; }
+.hero-logo { width: 280px; max-width: 80%; height: auto; margin: 0 auto; }
 .hero h1 {
   margin: 4px 0 0;
   font-family: var(--font-script);

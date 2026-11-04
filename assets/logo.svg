@@ -1,62 +1,197 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 200" role="img" aria-label="Glitter butterfly logo in blush to magenta with rhinestones and gold">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Nails by Mary logo: a detailed 3D pink butterfly with veined wings, pearl-spotted margins, rhinestones and a gold body">
   <defs>
-    <linearGradient id="d4up" x1="1" y1="1" x2="0" y2="0">
-      <stop offset="0" stop-color="#FFE3EE"/>
-      <stop offset="0.45" stop-color="#F48FB8"/>
-      <stop offset="1" stop-color="#C2185B"/>
-    </linearGradient>
-    <linearGradient id="d4lo" x1="1" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#FFD3E4"/>
-      <stop offset="0.5" stop-color="#EC6FA2"/>
-      <stop offset="1" stop-color="#A3134F"/>
-    </linearGradient>
-    <linearGradient id="d4gold" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#FFF1C9"/>
-      <stop offset="0.35" stop-color="#E3BF72"/>
-      <stop offset="0.7" stop-color="#A97C2F"/>
-      <stop offset="1" stop-color="#EBD08F"/>
-    </linearGradient>
-    <radialGradient id="d4gem" cx="0.35" cy="0.3" r="0.8">
-      <stop offset="0" stop-color="#FFFFFF"/>
-      <stop offset="0.5" stop-color="#FDE7F0"/>
-      <stop offset="1" stop-color="#E7A9C3"/>
+    <!-- ===== Wing shapes (left side; mirrored for right) ===== -->
+    <path id="fw" d="M196 130 C176 104 120 52 46 32 C34 30 26 40 28 52 Q30 62 26 70 Q32 78 30 88 Q36 96 34 106 Q42 114 44 124 Q54 130 58 140 Q70 144 76 152 C110 156 160 148 196 138 Z"/>
+    <path id="hw" d="M196 142 C170 144 124 152 100 166 Q90 172 92 182 Q84 190 88 200 Q82 210 90 220 Q90 232 102 238 Q108 250 122 252 Q132 260 144 256 Q156 262 166 254 C184 240 194 196 198 152 Z"/>
+    <clipPath id="fwClip"><use href="#fw"/></clipPath>
+    <clipPath id="hwClip"><use href="#hw"/></clipPath>
+
+    <!-- ===== Colour ===== -->
+    <radialGradient id="fwFill" gradientUnits="userSpaceOnUse" cx="196" cy="134" r="175">
+      <stop offset="0" stop-color="#8E0F4C"/>
+      <stop offset="0.22" stop-color="#C8236F"/>
+      <stop offset="0.5" stop-color="#F0649F"/>
+      <stop offset="0.8" stop-color="#FF97C1"/>
+      <stop offset="1" stop-color="#FFC4DB"/>
     </radialGradient>
-    <pattern id="d4sparkle" width="11" height="11" patternUnits="userSpaceOnUse" patternTransform="rotate(18)">
-      <circle cx="2" cy="3" r="0.7" fill="#FFFFFF" opacity="0.9"/>
-      <circle cx="7.5" cy="1.5" r="0.45" fill="#FFF1C9" opacity="0.9"/>
-      <circle cx="5" cy="7" r="0.9" fill="#FFFFFF" opacity="0.7"/>
-      <circle cx="9.5" cy="9" r="0.5" fill="#FFFFFF" opacity="0.85"/>
-      <circle cx="1" cy="9.5" r="0.4" fill="#FFF1C9" opacity="0.8"/>
-    </pattern>
-    <filter id="d4shadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#8E0E4E" flood-opacity="0.3"/>
+    <radialGradient id="hwFill" gradientUnits="userSpaceOnUse" cx="198" cy="148" r="130">
+      <stop offset="0" stop-color="#7C0D43"/>
+      <stop offset="0.3" stop-color="#BE1F68"/>
+      <stop offset="0.65" stop-color="#EB5C98"/>
+      <stop offset="1" stop-color="#FFC6DC"/>
+    </radialGradient>
+    <linearGradient id="iris" gradientUnits="userSpaceOnUse" x1="40" y1="30" x2="196" y2="250">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.12"/>
+      <stop offset="0.3" stop-color="#E9D4FF" stop-opacity="0.22"/>
+      <stop offset="0.55" stop-color="#FFE7B8" stop-opacity="0.18"/>
+      <stop offset="0.8" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFF4D1"/>
+      <stop offset="0.3" stop-color="#E7C477"/>
+      <stop offset="0.6" stop-color="#A87A2C"/>
+      <stop offset="0.85" stop-color="#F0D592"/>
+      <stop offset="1" stop-color="#B8893A"/>
+    </linearGradient>
+    <linearGradient id="goldBody" gradientUnits="userSpaceOnUse" x1="190" y1="0" x2="210" y2="0">
+      <stop offset="0" stop-color="#7A5520"/>
+      <stop offset="0.3" stop-color="#E9C97E"/>
+      <stop offset="0.5" stop-color="#FFF3CF"/>
+      <stop offset="0.7" stop-color="#D2A85A"/>
+      <stop offset="1" stop-color="#6E4A18"/>
+    </linearGradient>
+    <radialGradient id="thorax" cx="0.4" cy="0.3" r="0.8">
+      <stop offset="0" stop-color="#FFF0C8"/>
+      <stop offset="0.45" stop-color="#D9AE5E"/>
+      <stop offset="1" stop-color="#6E4A18"/>
+    </radialGradient>
+    <radialGradient id="pearl" cx="0.35" cy="0.3" r="0.75">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="0.55" stop-color="#FDEFF5"/>
+      <stop offset="1" stop-color="#E2B4C8"/>
+    </radialGradient>
+    <radialGradient id="crystal" cx="0.35" cy="0.3" r="0.8">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="0.35" stop-color="#FFE3F0"/>
+      <stop offset="0.7" stop-color="#F59AC2"/>
+      <stop offset="1" stop-color="#B8336F"/>
+    </radialGradient>
+    <linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- ===== Depth ===== -->
+    <filter id="relief" x="-5%" y="-5%" width="110%" height="110%" color-interpolation-filters="sRGB">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="b"/>
+      <feSpecularLighting in="b" surfaceScale="5" specularConstant="0.9" specularExponent="24" lighting-color="#FFF3F8" result="spec">
+        <fePointLight x="200" y="-60" z="260"/>
+      </feSpecularLighting>
+      <feComposite in="spec" in2="SourceAlpha" operator="in" result="specIn"/>
+      <feComposite in="SourceGraphic" in2="specIn" operator="arithmetic" k1="0" k2="1" k3="0.32" k4="0"/>
     </filter>
-    <path id="d4u" d="M117 93 C101 60 72 34 46 35 C29 36 25 56 36 72 C50 91 84 102 117 100 Z"/>
-    <path id="d4l" d="M117 105 C93 106 66 116 61 137 C57 155 77 162 93 151 C106 141 114 125 118 110 Z"/>
-    <g id="d4gemDot"><circle r="3" fill="url(#d4gem)" stroke="url(#d4gold)" stroke-width="0.8"/><circle cx="-0.9" cy="-1" r="0.9" fill="#FFFFFF"/></g>
-    <g id="d4wing">
-      <use href="#d4u" fill="url(#d4up)"/>
-      <use href="#d4l" fill="url(#d4lo)"/>
-      <use href="#d4u" fill="url(#d4sparkle)"/>
-      <use href="#d4l" fill="url(#d4sparkle)"/>
-      <use href="#d4u" fill="none" stroke="url(#d4gold)" stroke-width="2.2"/>
-      <use href="#d4l" fill="none" stroke="url(#d4gold)" stroke-width="2.2"/>
-      <path d="M112 92 C98 74 78 58 52 50 M110 98 C90 88 66 78 40 66 M112 108 C96 116 82 128 70 146" fill="none" stroke="#FFF4F8" stroke-width="0.9" stroke-linecap="round" opacity="0.7"/>
-      <use href="#d4gemDot" transform="translate(46 35)"/>
-      <use href="#d4gemDot" transform="translate(31 56) scale(0.8)"/>
-      <use href="#d4gemDot" transform="translate(40 76) scale(0.7)"/>
-      <use href="#d4gemDot" transform="translate(65 36) scale(0.7)"/>
-      <use href="#d4gemDot" transform="translate(59 140) scale(0.8)"/>
-      <use href="#d4gemDot" transform="translate(76 158) scale(0.7)"/>
+    <filter id="shadow" x="-15%" y="-15%" width="130%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="5" flood-color="#6B0B39" flood-opacity="0.32"/>
+    </filter>
+
+    <!-- ===== Details ===== -->
+    <g id="gem">
+      <circle r="4" fill="url(#crystal)" stroke="url(#gold)" stroke-width="1.2"/>
+      <path d="M-2.4 -1.2 L0 -3 L2.4 -1.2 L1.4 2 L-1.4 2 Z" fill="#FFFFFF" opacity="0.5"/>
+      <circle cx="-1.3" cy="-1.5" r="0.9" fill="#FFFFFF"/>
+    </g>
+    <path id="spark" d="M0 -7 C0.7 -1.8 1.8 -0.7 7 0 C1.8 0.7 0.7 1.8 0 7 C-0.7 1.8 -1.8 0.7 -7 0 C-1.8 -0.7 -0.7 -1.8 0 -7 Z"/>
+
+    <!-- ===== One full left wing pair ===== -->
+    <g id="wingL">
+      <!-- Hindwing -->
+      <g clip-path="url(#hwClip)">
+        <use href="#hw" fill="url(#hwFill)"/>
+        <g fill="none" stroke="#5E0A33" stroke-linecap="round" opacity="0.75">
+          <path d="M194 146 C160 154 124 164 96 178" stroke-width="1.6"/>
+          <path d="M194 148 C160 166 116 186 88 206" stroke-width="1.6"/>
+          <path d="M195 150 C164 180 130 210 104 236" stroke-width="1.6"/>
+          <path d="M196 152 C176 190 152 226 132 252" stroke-width="1.6"/>
+          <path d="M197 154 C188 196 176 230 164 254" stroke-width="1.4"/>
+          <path d="M150 158 C140 176 138 192 146 210" stroke-width="1.2"/>
+        </g>
+        <!-- Dark margin band -->
+        <use href="#hw" fill="none" stroke="#4A0828" stroke-width="20"/>
+        <use href="#hw" fill="none" stroke="#7C1046" stroke-width="12" opacity="0.6"/>
+        <!-- Pearl spots in the margin -->
+        <g fill="url(#pearl)">
+          <circle cx="100" cy="174" r="2.4"/><circle cx="95" cy="186" r="2.6"/>
+          <circle cx="93" cy="200" r="2.6"/><circle cx="95" cy="214" r="2.6"/>
+          <circle cx="102" cy="228" r="2.6"/><circle cx="113" cy="239" r="2.6"/>
+          <circle cx="126" cy="246" r="2.6"/><circle cx="141" cy="249" r="2.6"/>
+          <circle cx="155" cy="248" r="2.4"/>
+        </g>
+        <use href="#hw" fill="url(#iris)"/>
+      </g>
+      <use href="#hw" fill="none" stroke="url(#gold)" stroke-width="2" stroke-linejoin="round"/>
+
+      <!-- Forewing -->
+      <g clip-path="url(#fwClip)">
+        <use href="#fw" fill="url(#fwFill)"/>
+        <g fill="none" stroke="#5E0A33" stroke-linecap="round" opacity="0.75">
+          <path d="M194 131 C150 96 100 60 46 40" stroke-width="1.8"/>
+          <path d="M192 132 C150 106 90 84 34 70" stroke-width="1.6"/>
+          <path d="M190 133 C150 118 96 108 38 104" stroke-width="1.6"/>
+          <path d="M188 135 C150 130 110 130 58 134" stroke-width="1.6"/>
+          <path d="M186 137 C150 140 120 146 84 150" stroke-width="1.4"/>
+          <path d="M112 66 C104 82 100 98 102 114" stroke-width="1.3"/>
+          <path d="M150 98 C142 108 138 120 140 134" stroke-width="1.2"/>
+        </g>
+        <!-- Dark margin band with apex patch -->
+        <use href="#fw" fill="none" stroke="#4A0828" stroke-width="20"/>
+        <use href="#fw" fill="none" stroke="#7C1046" stroke-width="12" opacity="0.6"/>
+        <path d="M22 28 C50 32 72 42 88 56 C72 68 50 72 24 68 Z" fill="#4A0828"/>
+        <path d="M30 36 C52 40 66 46 76 56 C64 62 48 64 30 62 Z" fill="#7C1046" opacity="0.55"/>
+        <!-- Pearl spots -->
+        <g fill="url(#pearl)">
+          <circle cx="44" cy="50" r="2.8"/><circle cx="56" cy="56" r="2.4"/><circle cx="66" cy="52" r="2"/>
+          <circle cx="35" cy="76" r="2.6"/><circle cx="37" cy="90" r="2.6"/>
+          <circle cx="41" cy="104" r="2.6"/><circle cx="48" cy="117" r="2.6"/>
+          <circle cx="58" cy="129" r="2.6"/><circle cx="70" cy="139" r="2.4"/>
+          <circle cx="84" cy="145" r="2"/>
+        </g>
+        <use href="#fw" fill="url(#iris)"/>
+        <!-- Glossy highlight streak -->
+        <path d="M176 112 C150 88 112 64 70 50 C110 70 146 94 168 118 Z" fill="url(#gloss)" opacity="0.55"/>
+      </g>
+      <use href="#fw" fill="none" stroke="url(#gold)" stroke-width="2.2" stroke-linejoin="round"/>
+
+      <!-- Rhinestones along the leading edge -->
+      <use href="#gem" transform="translate(170 104) scale(0.8)"/>
+      <use href="#gem" transform="translate(146 82) scale(0.9)"/>
+      <use href="#gem" transform="translate(120 63)"/>
+      <use href="#gem" transform="translate(94 48) scale(1.05)"/>
+      <use href="#gem" transform="translate(66 38) scale(1.1)"/>
+      <use href="#gem" transform="translate(40 34) scale(1.2)"/>
     </g>
   </defs>
-  <g filter="url(#d4shadow)">
-    <use href="#d4wing"/>
-    <use href="#d4wing" transform="translate(240 0) scale(-1 1)"/>
-    <path d="M120 80 C124.5 90 124.5 128 120 144 C115.5 128 115.5 90 120 80 Z" fill="url(#d4gold)"/>
-    <circle cx="120" cy="76" r="5" fill="url(#d4gem)" stroke="url(#d4gold)" stroke-width="1.2"/>
-    <path d="M118 72 C114 58 104 48 92 44 M122 72 C126 58 136 48 148 44" fill="none" stroke="url(#d4gold)" stroke-width="1.6" stroke-linecap="round"/>
-    <use href="#d4gemDot" transform="translate(91 43.5) scale(0.8)"/>
-    <use href="#d4gemDot" transform="translate(149 43.5) scale(0.8)"/>
+
+  <!-- ===== Assembly ===== -->
+  <g filter="url(#shadow)">
+    <g filter="url(#relief)">
+      <use href="#wingL"/>
+      <use href="#wingL" transform="translate(400 0) scale(-1 1)"/>
+    </g>
+
+    <!-- Antennae -->
+    <g fill="none" stroke-linecap="round">
+      <path d="M196 104 C186 80 172 58 150 38" stroke="#5A3A10" stroke-width="2.6"/>
+      <path d="M204 104 C214 80 228 58 250 38" stroke="#5A3A10" stroke-width="2.6"/>
+      <path d="M196 104 C186 80 172 58 150 38" stroke="url(#gold)" stroke-width="1.4"/>
+      <path d="M204 104 C214 80 228 58 250 38" stroke="url(#gold)" stroke-width="1.4"/>
+    </g>
+    <ellipse cx="148" cy="36" rx="4.2" ry="5.2" transform="rotate(-40 148 36)" fill="url(#thorax)"/>
+    <ellipse cx="252" cy="36" rx="4.2" ry="5.2" transform="rotate(40 252 36)" fill="url(#thorax)"/>
+
+    <!-- Abdomen: segmented gold -->
+    <path d="M200 140 C209 150 210 196 204 226 C202 236 198 236 196 226 C190 196 191 150 200 140 Z" fill="url(#goldBody)" stroke="#6E4A18" stroke-width="0.8"/>
+    <g fill="none" stroke="#6E4A18" stroke-width="0.9" opacity="0.7">
+      <path d="M192.6 156 Q200 160 207.4 156"/><path d="M192.4 166 Q200 170 207.6 166"/>
+      <path d="M192.6 176 Q200 180 207.4 176"/><path d="M193 186 Q200 190 207 186"/>
+      <path d="M193.6 196 Q200 200 206.4 196"/><path d="M194.4 206 Q200 210 205.6 206"/>
+      <path d="M195.4 216 Q200 219 204.6 216"/>
+    </g>
+    <path d="M199 146 C197 170 197 200 199 224" fill="none" stroke="#FFF8E2" stroke-width="1.4" opacity="0.7" stroke-linecap="round"/>
+
+    <!-- Thorax and head -->
+    <ellipse cx="200" cy="126" rx="10" ry="17" fill="url(#thorax)" stroke="#6E4A18" stroke-width="0.8"/>
+    <ellipse cx="197" cy="120" rx="3" ry="7" fill="#FFF8E2" opacity="0.55"/>
+    <circle cx="200" cy="104" r="8.5" fill="url(#thorax)" stroke="#6E4A18" stroke-width="0.8"/>
+    <circle cx="194.5" cy="103" r="3" fill="#3A0A22"/><circle cx="205.5" cy="103" r="3" fill="#3A0A22"/>
+    <circle cx="193.6" cy="102" r="0.9" fill="#FFFFFF"/><circle cx="204.6" cy="102" r="0.9" fill="#FFFFFF"/>
+
+    <!-- Center jewel -->
+    <use href="#gem" transform="translate(200 128) scale(1.3)"/>
   </g>
+
+  <!-- Sparkles -->
+  <use href="#spark" transform="translate(40 250) scale(1.1)" fill="url(#gold)"/>
+  <use href="#spark" transform="translate(362 248) scale(0.9)" fill="url(#gold)"/>
+  <use href="#spark" transform="translate(372 30) scale(0.8)" fill="url(#gold)"/>
+  <use href="#spark" transform="translate(28 18) scale(0.6)" fill="url(#gold)"/>
 </svg>
