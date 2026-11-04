@@ -14,5 +14,7 @@ Text in `[square brackets]` is a placeholder. Replace it with real details such 
 
 ## Viewing
 
-Open `index.html` in a browser. When GitHub Pages is turned on, the site is live at
-`https://<your-username>.github.io/nails-by-mary/`.
+**Live site:** https://alvaradohernandezmary04-svg.github.io/nails-by-mary/
+
+It's hosted on GitHub Pages and updates a minute or two after each push to `main`.
+To preview locally, run `powershell -ExecutionPolicy Bypass -File serve.ps1` and open http://localhost:5500.
